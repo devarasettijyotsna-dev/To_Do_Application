@@ -1,119 +1,70 @@
-# 📝 To-Do List Web Application
+# To-Do List
 
-A simple, clean, and interactive **To-Do List web application** built using **HTML, CSS, and JavaScript**.  
-This project helps users manage daily tasks efficiently with data persistence using **Local Storage**.
+## Project Description
+A simple and interactive **To-Do List web application** built with HTML, CSS, and JavaScript.  
+This project allows users to add, check/uncheck, and delete tasks. Tasks are saved in the browser's **localStorage**, so they persist even after refreshing or closing the page.
 
----
+## Features
+- Add new tasks to the list
+- Mark tasks as completed (toggle check/uncheck)
+- Delete tasks individually
+- Persistent storage using **localStorage**
+- Responsive and clean UI with gradient background
 
-## 🚀 Features
+## Tech Stack
+- **HTML5** – Structure of the application  
+- **CSS3** – Styling and layout  
+- **JavaScript (ES6)** – Functionality and interactivity  
+- **LocalStorage** – Data persistence  
 
-- ➕ Add new tasks
-- ✅ Mark tasks as completed
-- ❌ Delete tasks
-- 💾 Tasks are saved using browser **Local Storage**
-- 🎨 Simple and responsive user interface
-- ⚡ Built with pure JavaScript (no frameworks)
-
----
-
-## 🛠️ Technologies Used
-
-- **HTML5** – Structure of the application
-- **CSS3** – Styling and layout
-- **JavaScript (ES6)** – Application logic
-- **Local Storage API** – Persistent task storage
-
----
-
-## 📂 Project Structure
-
-To-Do-List/
-│
+## Project Structure
 ├── index.html # Main HTML file
-├── style.css # Application styling
-├── script.js # JavaScript functionality
-├── images/ # Images/icons used in the app
-└── README.md # Project documentation
 
+├── style.css # Styling for the application
 
----
+├── script.js # JavaScript logic
 
-## ⚙️ How the Application Works
+└── images/
 
-1. User enters a task in the input field
-2. Clicks the **Add** button
-3. Task appears in the list
-4. Clicking on a task marks it as completed
-5. Clicking **×** removes the task
-6. Tasks remain saved even after refreshing the page
+└── .png # Placeholder image (optional)
+## How It Works
+1. User enters a task in the input box and clicks **Add**.
+2. The task is appended to the list with a delete button (`×`).
+3. Clicking on a task toggles its "checked" state (completed).
+4. Clicking on the delete button removes the task.
+5. All changes are saved in **localStorage** automatically.
+6. On page load, tasks are retrieved from localStorage and displayed.
 
----
+## Setup / Installation Instructions
+1. Clone or download this repository.
+2. Ensure the following files are in the same directory:
+   - `index.html`
+   - `style.css`
+   - `script.js`
+   - `images/` folder (optional for icons)
+3. Open `index.html` in any modern web browser.
 
-## 💡 JavaScript Functionality Overview
+No additional installation or backend setup is required.
 
-- Uses `createElement()` to dynamically add tasks
-- Event delegation for handling clicks on tasks and delete buttons
-- Uses:
-  - `localStorage.setItem()` to save tasks
-  - `localStorage.getItem()` to retrieve tasks
+## Usage
+- Type a task in the input field.
+- Click the **Add** button to add it to the list.
+- Click on a task to mark it as completed.
+- Click the `×` button to delete a task.
+- Refresh or reopen the page — tasks remain saved.
 
----
+## Screenshots
+*(Placeholder — add actual screenshots here)*
 
-## 📦 Installation & Usage
+![App Screenshot](screenshots/todo-app.png)
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/todo-list.git
-Navigate to the project folder:
+## Future Enhancements
+Based on the current code, possible improvements include:
+- Add an **edit task** feature.
+- Implement **categories** or **priority levels** for tasks.
+- Add a **clear all tasks** button.
+- Improve accessibility (keyboard navigation, ARIA labels).
+- Enhance UI with animations or icons.
 
-cd todo-list
-Open index.html in any modern web browser
-
-✅ No additional setup required.
-
-📸 Screenshots (Optional)
-You can add screenshots to improve project presentation:
-
-![To-Do App Screenshot](images/screenshot.png)
-🔮 Future Enhancements
-✏️ Edit tasks
-
-📅 Add due dates
-
-🔍 Filter completed and pending tasks
-
-🌙 Dark mode
-
-📱 Improved mobile responsiveness
-
-🤝 Contributing
-Contributions are welcome!
-
-Fork the repository
-
-Create a new branch
-
-Make your changes
-
-Submit a pull request
-
-📄 License
-This project is licensed under the MIT License.
-
-🙋‍♀️ Author
-Jyotsna Devarasetti
-Frontend Developer
-Learning Web Development & JavaScript 🚀
-
-⭐ If you like this project, don’t forget to star the repository!
-
-
----
-
-If you want next:
-- GitHub **badges**
-- A **short README** version
-- **Deployment steps** (GitHub Pages)
-- A **resume-ready project explanation**
-
-Just say the word 😊
+## License
+This project is licensed under the **MIT License**.
